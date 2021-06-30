@@ -1,0 +1,47 @@
+﻿<Window x:Class="Buyers_and_orders.SighUpDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Регистрация" MinHeight="275" MinWidth="500" MaxHeight="275" MaxWidth="500">
+    <Grid>
+        <Label Content="Фамилия:" Height="25" Margin="25,25,0,0" VerticalAlignment="Top"
+               Width="100" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="125,25,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="100"
+                 VerticalContentAlignment="Center" x:Name="CustLastName" />
+        <Label Content="Имя:" Height="25" Margin="25,60,0,0" VerticalAlignment="Top"
+               Width="100" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="125,60,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="100"
+                 VerticalContentAlignment="Center" x:Name="CustFirstName" />
+        <Label Content="Отчество:" Height="25" Margin="25,95,0,0" VerticalAlignment="Top"
+               Width="100" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="125,95,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="100"
+                 VerticalContentAlignment="Center" x:Name="CustMiddleName" />
+        <Label Content="Телефон:" Height="25" Margin="25,130,0,0" VerticalAlignment="Top"
+               Width="100" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="125,130,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="100"
+                 VerticalContentAlignment="Center" x:Name="CustPhoneNumber" />
+        <Label Content="Адрес:" Height="25" Margin="265,25,0,0" VerticalAlignment="Top"
+               Width="75" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="340,25,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 VerticalContentAlignment="Center" x:Name="CustAddress" />
+        <Label Content="E-Mail:" Height="25" Margin="265,75,0,0" VerticalAlignment="Top"
+               Width="75" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="340,75,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 VerticalContentAlignment="Center" x:Name="CustEMAil" />
+        <Label Content="Пароль:" Height="25" Margin="265,110,0,0" VerticalAlignment="Top"
+               Width="75" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <PasswordBox HorizontalAlignment="Left" Height="25" Margin="340,110,0,0"
+                     VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" x:Name="CustPassword" />
+        <Button Width="150" Content="Зарегистрироваться" Height="25" VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,25" Click="Accept_Click" />
+    </Grid>
+</Window>

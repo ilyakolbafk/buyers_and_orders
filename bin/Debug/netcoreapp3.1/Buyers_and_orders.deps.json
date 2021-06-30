@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Buyers_and_orders/1.0.0": {
+        "runtime": {
+          "Buyers_and_orders.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Buyers_and_orders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

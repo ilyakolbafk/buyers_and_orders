@@ -1,0 +1,22 @@
+﻿<Window x:Class="Buyers_and_orders.SignInDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SignInDialog" MinHeight="200" MinWidth="260" MaxHeight="200" MaxWidth="260">
+    <Grid>
+        <Label Content="E-Mail:" Height="25" Margin="25,25,0,0" VerticalAlignment="Top"
+               Width="75" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="100,25,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 VerticalContentAlignment="Center" x:Name="CustEMAil" />
+        <Label Content="Пароль:" Height="25" Margin="25,60,0,0" VerticalAlignment="Top"
+               Width="75" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+        <PasswordBox HorizontalAlignment="Left" Height="25" Margin="100,60,0,0"
+                     VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" x:Name="CustPassword" />
+        <Button Width="150" Content="Авторизоваться" Height="25" VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,25" Click="Accept_Click" />
+    </Grid>
+</Window>

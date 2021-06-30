@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CartDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerListDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrdersDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerReportDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SighUpDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SignInDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CartDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerListDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrdersDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerReportDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SighUpDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SignInDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="Buyers_and_orders.CustomerListDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="CustomerListDialog" MinHeight="350" MinWidth="500">
+    <Grid>
+        <DataGrid x:Name="CustomerGrid" ContextMenuOpening="CustomerGrid_OnContextMenuOpening"
+                  Margin="25,25,25,25"
+                  AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding Path=FullName}"
+                                    MinWidth="200" MaxWidth="500" />
+                <DataGridTextColumn Header="E-Mail" Binding="{Binding Path=EMail}"
+                                    MinWidth="125" MaxWidth="200" />
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding Path=PhoneNumber}"
+                                    MinWidth="125" MaxWidth="200" />
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Address}"
+                                    MinWidth="150" MaxWidth="250" />
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu x:Name="DataGridContextMenu">
+                    <MenuItem x:Name="CustomerOrders" Header="Открыть заказы клиента" Click="CustomerOrders_OnClick" />
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Window>
